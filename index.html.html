@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Ti ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PANTALLA INICIAL -->
+<div id="intro">
+  <div class="intro-content">
+    <h2>💖 Para ti 💖</h2>
+    <p>Toca la pantalla para iniciar</p>
+    <span>✨</span>
+  </div>
+</div>
+
+<!-- AUDIO -->
+<audio id="music" loop preload="auto">
+  <source src="music/musica.mp3" type="audio/mpeg">
+</audio>
+
+<!-- BOTÓN MÚSICA -->
+<button id="music-btn">⏸️</button>
+
+<!-- 💍 ANILLO -->
+<div class="ring-container hidden">
+  <div class="ring"></div>
+  <div class="diamond"></div>
+</div>
+
+<!-- ❤️ CORAZONES -->
+<div class="hearts hidden"></div>
+
+<!-- CONTENIDO -->
+<div class="card hidden">
+  <h1>Para ti, <span>Rocío</span></h1>
+
+  <section class="gallery">
+    <img src="img/foto1.jpeg" onclick="openImage(this)">
+    <img src="img/foto2.jpeg" onclick="openImage(this)">
+    <img src="img/foto3.jpeg" onclick="openImage(this)">
+    <img src="img/foto4.jpeg" onclick="openImage(this)">
+  </section>
+
+  <p class="text" id="typing"></p>
+
+  <div id="hiddenText">
+Rocío, amor mío:
+
+Hay personas que llegan a la vida sin hacer ruido,
+pero lo cambian todo.
+Desde que estás en la mía,
+el corazón se siente en casa.
+
+Gracias por tu forma de querer,
+por tu paciencia
+y por ser ese lugar al que siempre quiero volver.
+
+Hoy, mañana y siempre,
+mi corazón te elige a ti.
+  </div>
+
+  <footer>
+    Con amor 💖<br>
+    <strong>Para siempre</strong>
+  </footer>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeImage()">
+  <img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
